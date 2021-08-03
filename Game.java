@@ -10,7 +10,7 @@ public class Game {
 
     public static void input(Object obj) {
         Scanner Reader = new Scanner(System.in);
-        obj = Reader.nextLine();
+        obj = Reader.nextLine().charAt(0);
     }
 
     public boolean Check(String word, char guess) {
