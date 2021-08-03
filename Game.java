@@ -8,11 +8,6 @@ public class Game {
         System.out.println(obj);
     }
 
-    public static void input(Object obj) {
-        Scanner Reader = new Scanner(System.in);
-        obj = Reader.nextLine().charAt(0);
-    }
-
     public boolean Check(String word, char guess) {
         int i;
         // linear search for the char in the word
@@ -25,7 +20,19 @@ public class Game {
     }
 
     public static void main(String[] args) {
-        String word = "hello";
 
+        Scanner input = new Scanner(System.in);
+        String word = "hello";
+        int countLOSS = 0;
+        char answer = 'N';
+        print("This is a hangman game u better save that motherfucker down here");
+        answer = input.nextLine().charAt(0);
+        print(answer);
+        while (true) {
+            if (countLOSS == 5) {
+                print("Game is over ! you lost you mther fucker !");// NICE
+            }
+            break;// for now
+        }
     }
 }
