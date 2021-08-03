@@ -28,11 +28,14 @@ public class Game {
         print("This is a hangman game u better save that motherfucker down here");
         answer = input.nextLine().charAt(0);
         print(answer);
+        int opr = word.length() / 2 + 1;
+        String[] arr;
         while (true) {
             if (countLOSS == 5) {
                 print("Game is over ! you lost you mther fucker !");// NICE
             }
-            break;// for now
+
+            print("Enter your guess you fcking peace of shit ! ");
         }
     }
 }
