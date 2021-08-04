@@ -9,6 +9,13 @@ public class Game {
         System.out.println(obj);
     }
 
+    boolean FckingBool(int fuck) {
+        if (fuck == 1) {
+            return true;
+        }
+        return false;
+    }
+
     public boolean Check(String word, char guess) {
         int i;
         // linear search for the char in the word
@@ -31,10 +38,10 @@ public class Game {
 
         int opr = word.length() / 2;
         print(opr);
-
+        boolean g;
         String ToGuess;
         for (int i = 0; i < word.length(); i++) {
-
+            g = rand.nextInt(2);
         }
 
         while (true) {
