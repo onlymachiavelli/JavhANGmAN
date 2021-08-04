@@ -1,5 +1,6 @@
 import java.io.Reader;
 import java.util.Scanner;
+import java.util.Random;
 
 public class Game {
     // Just to make the syntax easier !
@@ -25,18 +26,26 @@ public class Game {
         String word = "hello";
         int countLOSS = 0;
         char answer = 'N';
+        Random rand = new Random();
         print("This is a hangman game u better save that motherfucker down here");
-        answer = input.nextLine().charAt(0);
-        print(answer);
+
         int opr = word.length() / 2;
         print(opr);
-        String[] arr;
+
+        String ToGuess;
+        for (int i = 0; i < word.length(); i++) {
+
+        }
+
         while (true) {
             if (countLOSS == 5) {
                 print("Game is over ! you lost you mther fucker !");// NICE
             }
+            print("Word length = " + word.length());
+            print("Enter your guess you fcking answer u fcking  peace of shit ! ");
 
-            print("Enter your guess you fcking peace of shit ! ");
+            //
+            answer = input.nextLine().charAt(0);
         }
     }
 }
