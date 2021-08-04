@@ -9,7 +9,7 @@ public class Game {
         System.out.println(obj);
     }
 
-    boolean FckingBool(int fuck) {
+    public static boolean FckingBool(int fuck) {
         if (fuck == 1) {
             return true;
         }
@@ -41,7 +41,7 @@ public class Game {
         boolean g;
         String ToGuess;
         for (int i = 0; i < word.length(); i++) {
-            g = rand.nextInt(2);
+            g = FckingBool(rand.nextInt(2));
         }
 
         while (true) {
