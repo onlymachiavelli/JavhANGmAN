@@ -28,7 +28,8 @@ public class Game {
         print("This is a hangman game u better save that motherfucker down here");
         answer = input.nextLine().charAt(0);
         print(answer);
-        int opr = word.length() / 2 + 1;
+        int opr = word.length() / 2;
+        print(opr);
         String[] arr;
         while (true) {
             if (countLOSS == 5) {
