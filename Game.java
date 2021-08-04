@@ -35,14 +35,11 @@ public class Game {
         char answer = 'N';
         Random rand = new Random();
         print("This is a hangman game u better save that motherfucker down here");
-
         int opr = word.length() / 2;
         print(opr);
         boolean g;
         String ToGuess;
-        for (int i = 0; i < word.length(); i++) {
-            g = FckingBool(rand.nextInt(2));
-        }
+        int[] Used;
 
         while (true) {
             if (countLOSS == 5) {
@@ -51,7 +48,8 @@ public class Game {
             print("Word length = " + word.length());
             print("Enter your guess you fcking answer u fcking  peace of shit ! ");
 
-            //
+            // LATER !
+
             answer = input.nextLine().charAt(0);
         }
     }
