@@ -34,7 +34,7 @@ public class Game {
         int countLOSS = 0;
         char answer = 'N';
         Random rand = new Random();
-        print("This is a hangman game u better save that motherfucker down here");
+        print("This is a hangman game u better save that motherfucker down here !");
         int opr = word.length() / 2;
         print(opr);
         boolean g;
